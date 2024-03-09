@@ -14,7 +14,7 @@ nav a {
   }
 
   img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
@@ -41,6 +41,9 @@ nav a {
     color:antiquewhite;
     text-align: center;
     
+  }
+  aside img {
+    border-radius: 50%;
   }
   main img {
     width: 150px;
