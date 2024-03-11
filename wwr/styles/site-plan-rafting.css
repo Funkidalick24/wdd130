@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick&family=Sedgwick+Ave&display=swap');
 :root {
   
-  --primary-color: #F58549 ;
-  --secondary-color: #d4b00c ;
-  --accent1-color: #4c5bdd;
-  --accent2-color: #a05481;
+    --primary-color: #941B0C   ;
+    --secondary-color: #BC3908 ;
+    --accent1-color: #F6AA1C;
+    --accent2-color: white;
 
   
-  --heading-font: "Sedgick Ave";
+  --heading-font: "Sedgwick Ave";
   --paragraph-font: Sedgwick Ave, Helvetica, sans-serif;
 
   
