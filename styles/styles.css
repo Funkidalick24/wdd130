@@ -1,11 +1,12 @@
 nav {
-  background-color: rgb(9, 129, 138);
+  background-color: #FF4242;
   padding: 10px;
+  height: 45px;
 }
 
 nav a {
     color: white;
-    display: block;
+    display: inline;
     padding: 20px;
   }
 
@@ -56,5 +57,31 @@ nav a {
   footer {
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
+  }
+
+  .single{
+    width: 50px;
+    box-shadow: 0 0 0 0;
+    padding: 0;
+    border: 0;
+    float: right;
+    height: auto;
+    
+
+  }
+  .fb{
+    width: 50px;
+    box-shadow: 0 0 0 0;
+    padding: 0;
+    border: 0;
+    float: right;
+    height: auto;
+    
+    
+
+  }
+
+  a{
     text-align: center;
   }
