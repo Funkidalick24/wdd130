@@ -41,12 +41,12 @@ nav a {
     background-color:#333;
     color:antiquewhite;
     text-align: center;
+    position: relative;
     
   }
   aside img {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
+    width: 300px;
+    
   }
   main img {
     width: 150px;
@@ -60,6 +60,7 @@ nav a {
     border-top: 1px solid #000;
     text-align: center;
   }
+  /* Class Selectors*/
 
   .single{
     width: 50px;
@@ -96,4 +97,5 @@ aside h2 {
   position: absolute;
   top: 47px;
   left: 150px;
+  
 }
