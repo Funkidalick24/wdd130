@@ -1,7 +1,7 @@
 nav {
   background-color: #FF4242;
   padding: 10px;
-  height: 45px;
+  height: 65px;
 }
 
 nav a {
@@ -51,6 +51,7 @@ nav a {
   main img {
     width: 150px;
     height: auto;
+    float: right;
     
   }
 
@@ -66,19 +67,33 @@ nav a {
     padding: 0;
     border: 0;
     float: right;
-    height: auto;
-    
-
-  }
+    }
   .fb{
     width: 50px;
     box-shadow: 0 0 0 0;
     padding: 0;
     border: 0;
     float: right;
-    height: auto;
     
     
+    }
 
-  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.box {
+  margin: 1rem;
+  border: 1px solid #333;
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
