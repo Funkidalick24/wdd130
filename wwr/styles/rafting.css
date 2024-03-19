@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick&family=Sedgwick+Ave&display=swap');
+:root {
+  
+    --primary-color: #941B0C   ;
+    --secondary-color: #BC3908 ;
+    --accent1-color: #F6AA1C;
+    --accent2-color: white;
+
+  
+  --heading-font: Sedgwick Ave;
+  --paragraph-font: Sedgwick Ave, Helvetica, sans-serif;
+
+  
+  --headline-color-on-white: #941B0C;  
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: #ECA400; 
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: #BC3908  ;
+  --nav-link-color: #941B0C;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #F6AA1C;
+}
+
+*{ 
+  max-width: 960px;}
+
+  h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+
+  }
+
+ 
+  p{
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+  }
+  .hero{
+    position: relative;
+  }
+  .hero h1{
+    position: absolute;
+  }
+  .hero img p{
+    position:absolute;
+    display: inline-block;
+  }
+
+  .hero img p{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero p{
+    position: absolute;
+    width: 80%;
+    background: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
+
+  .logo_icon{
+    width: 20px;
+  }
+
+  
+  .hero article{
+    width: 20%;
+    position: absolute;
+  }
+
+  footer nav{
+    display: inline-block;
+  }
