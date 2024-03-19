@@ -24,6 +24,7 @@
 
 *{ 
   max-width: 960px;}
+  nav{display: inline;}
 
   h1, h2 {
     font-family: var(--heading-font);
@@ -38,20 +39,27 @@
   }
   .hero{
     position: relative;
+    
   }
-  .hero h1{
+  .hero .background_hero{
+    height: auto;
+  }
+  .hero .small{
+    width: 200px;
     position: absolute;
   }
+  
   .hero img p{
     position:absolute;
-    display: inline-block;
-  }
-
-  .hero img p{
-    position: absolute;
-    display: block;
+    display: inline;
     width: 100%;
     height: auto;
+  }
+
+  .hero img {
+    float: right;
+    height: auto;
+  
   }
 
   .hero p{
@@ -73,4 +81,8 @@
 
   footer nav{
     display: inline-block;
+  }
+  
+  .logo_company{
+    float: left;
   }
