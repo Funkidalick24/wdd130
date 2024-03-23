@@ -24,7 +24,16 @@
 
 *{ 
   max-width: 960px;}
-  nav{display: inline;}
+
+  header{
+    display: grid;
+    max-width: 860px;
+    
+  }
+  nav{display: flex;
+  
+  }
+
 
   h1, h2 {
     font-family: var(--heading-font);
