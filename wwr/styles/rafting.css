@@ -51,8 +51,8 @@ p{
 
   body {
       font-family: var(--paragraph-font);
-      background-color: #fff;
-      color: var(--paragraph-color-on-white);
+      background-color: var(--primary-color);
+      color: var(--paragraph-color-on-color);
       margin: 0;
       padding: 0;
       box-sizing: border-box;
