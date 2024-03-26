@@ -23,7 +23,10 @@
 }
 header{
   display: grid;
-  max-width: 860px;
+  max-width: 1000px;
+  align-items: center;
+  
+
   
 }
 
