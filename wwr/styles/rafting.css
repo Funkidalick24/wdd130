@@ -21,77 +21,218 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #F6AA1C;
 }
-
-*{ 
-  max-width: 960px;}
-
-  header{
-    display: grid;
-    max-width: 860px;
-    
-  }
-  nav{display: flex;
+header{
+  display: grid;
+  max-width: 860px;
   
-  }
+}
 
 
-  h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
 
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+
+  
+}
+
+p{
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
 
  
-  p{
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
+
+
+
+  body {
+      font-family: var(--paragraph-font);
+      background-color: #fff;
+      color: var(--paragraph-color-on-white);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
   }
-  .hero{
-    position: relative;
-    
+
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
   }
-  .hero .background_hero{
-    height: auto;
+
+  header {
+      display: grid;
+      grid-template-columns: 120px 5 5 5 5 ;
+      align-items: center;
   }
-  .hero .small{
-    width: 200px;
-    position: absolute;
+
+  .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
   }
+
+  .logo {
+      color: rgb(4, 59, 59);
+      font-size: 25px;
+  }
+
+  .menu .navbar ul li a {
+      position: relative;
+      float: left;
+  }
+
+  .menu .navbar ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: aquamarine;
+      display: block;
+  }
+
+  .menu .navbar ul li a:hover {
+      color: aqua;
+  }
+
+  nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+  }
+
+.sociallinks a {
+text-decoration: none;
+color: inherit;
+
+}
+
+.hero {
+position: relative;
+overflow: visible;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.hero img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.hero .title-box {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: var(--primary-color);
+padding: 20px;
+text-align: center;
+width: 100%;
+box-sizing: border-box;
+}
+
+
+.hero h1 {
+margin: 0;
+font-size: 2.5rem;
+color: var(--color-primario);
+}
+
+
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+}
+
+nav a {
+margin-right: 10px;
+text-decoration: none;
+color: #333;
+}
+
+.history-box {
+background-color: rgba(224, 230, 229, 0.904);
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+}
+
+.history-text-left,
+.history-text-right {
+flex: 1;
+}
+
+.history-image {
+max-width: 50%;
+margin: 0 30px;
+}
+
+.history-content {
+flex: 1;
+}
+
+.history-image {
+max-width: 50%;
+}
+
+.adventures-section {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.adventures-section figure {
+flex: 1;
+  margin: 0 10px;
+ 
+  text-align: center;
+}
+
+.adventures-section img {
+width: 100%;
+  height: auto;
+  max-width: 100%;
   
-  .hero img p{
-    position:absolute;
-    display: inline;
-    width: 100%;
-    height: auto;
-  }
+  object-fit: cover;
+}
 
-  .hero img {
-    float: right;
-    height: auto;
-  
-  }
 
-  .hero p{
-    position: absolute;
-    width: 80%;
-    background: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-  }
+footer {
+background-color: #efefef;
+padding: 20px;
+text-align: center;
+}
 
-  .logo_icon{
-    width: 20px;
-  }
+.sociallinks {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
 
-  
-  .hero article{
-    width: 20%;
-    position: absolute;
-  }
+.sociallinks figure {
+margin-left: 5px;
+}
 
-  footer nav{
-    display: inline-block;
-  }
-  
-  .logo_company{
-    float: left;
-  }
+.sociallinks img {
+width: 30px;
+height: auto;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
