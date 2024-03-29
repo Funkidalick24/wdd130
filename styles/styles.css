@@ -1,236 +1,134 @@
 nav {
-  background-color: #FF4242;
-  padding: 10px;
-  height: 65px;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-nav a {
-    padding: 20px;
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
+    background-color: #FF4242;
+    padding: 10px;
+    height: 65px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
-
-  h1 {
-    color: rgb(9, 129, 138);
-  }
-
-  {
+  
+  nav a {
+      padding: 20px;
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+  
+    h1 {
+      color: rgb(9, 129, 138);
+    }
+  
+    img {
+      width: 200px;
+      height: auto;
+      border: 1px solid steelblue;
+      padding: 2px;
+      box-shadow: 0 0 30px gray;
+    }
+  
+    p {
+      padding: 0;
+    }
+  
+    main {
+      max-width: 400px;
+      text-align: center;
+      background-color: #333;
+      color: antiquewhite;
+    }
+  
+    aside {
+      width: 20rem;
+      margin: 1rem;
+      border: 1px solid rgba(0, 0,0, 0.2); 
+      padding: 1rem;
+      background-color:#333;
+      color:antiquewhite;
+      text-align: center;
+      position: relative;
+      
+    }
+    aside img {
+      width: 300px;
+      
+    }
+    main img {
+      width: 150px;
+      height: auto;
+      float: right;
+      
+    }
+  
+    footer {
+      margin-top: 15px;
+      border-top: 1px solid #000;
+      text-align: center;
+    }
+    /* Class Selectors*/
+  
+    .single{
+      width: 50px;
+      box-shadow: 0 0 0 0;
+      padding: 0;
+      border: 0;
+      float: right;
+      }
+    .fb{
+      width: 50px;
+      box-shadow: 0 0 0 0;
+      padding: 0;
+      border: 0;
+      float: right;
+      
+      
+      }
+  
+  *{
+    padding: 0;
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-    }
-    body {
-        font-family: var(--fuente-encabezado);
-        background-color: rgba(152, 227, 150, 0.892);
-        color: rgb(27, 10, 158);
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url(images/raftingVZLA.jpeg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-    }
-
-    .menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .logo {
-        color: rgb(4, 59, 59);
-        font-size: 25px;
-    }
-
-    .menu .navbar ul li a {
-        position: relative;
-        float: left;
-    }
-
-    .menu .navbar ul li a {
-        font-size: 18px;
-        padding: 20px;
-        color: aquamarine;
-        display: block;
-    }
-
-    .menu .navbar ul li a:hover {
-        color: aqua;
-    }
-
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav a {
-        margin-right: 10px;
-        text-decoration: none;
-        color: #333;
-    }
-
-.sociallinks a {
-text-decoration: none;
-color: inherit;
-
-}
-
-.hero {
-position: relative;
-overflow: visible;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.hero img {
-display: block;
-width: 100%;
-height: auto;
-}
-
-.hero .title-box {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: rgba(204, 196, 196, 0.8);
-padding: 20px;
-text-align: center;
-width: 100%;
-box-sizing: border-box;
-}
-
-
-.hero h1 {
-margin: 0;
-font-size: 2.5rem;
-color: var(--color-primario);
-}
-
-
-nav {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-}
-
-nav a {
-margin-right: 10px;
-text-decoration: none;
-color: #333;
-}
-
-.history-box {
-background-color: rgba(224, 230, 229, 0.904);
-padding: 20px;
-box-sizing: border-box;
-display: flex;
-align-items: center;
-}
-
-.history-text-left,
-.history-text-right {
-flex: 1;
-}
-
-.history-image {
-max-width: 50%;
-margin: 0 30px;
-}
-
-.history-content {
-flex: 1;
-}
-
-.history-image {
-max-width: 50%;
-}
-
-.adventures-section {
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
-}
-
-.adventures-section figure {
-flex: 1;
-    margin: 0 10px;
-   
-    text-align: center;
-}
-
-.adventures-section img {
-width: 100%;
-    height: auto;
-    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    margin: 1rem;
+    border: 1px solid #333;
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
     
-    object-fit: cover;
-}
-
-#caroni-image,
-#aponguao-image {
-max-width: 150%;
-height: auto;
-}
-
-
-footer {
-background-color: #efefef;
-padding: 20px;
-text-align: center;
-}
-
-.sociallinks {
-display: flex;
-justify-content: center;
-gap: 20px;
-}
-
-.sociallinks figure {
-margin-left: 5px;
-}
-
-.sociallinks img {
-width: 30px;
-height: auto;
-}
-
-.form-group {
-margin-bottom: 20px;
-}
-
-/* Agrega estilos para el formulario de contacto */
-#contact-section form {
-/* Estilos del formulario */
-}
+  }
+  header,footer , .grid  {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    align-items: center;
+  }
+  
+  main {
+    grid-column: 2/3;
+    margin: 1rem;
+  }
+  
+  aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+  }
