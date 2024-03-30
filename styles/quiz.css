@@ -10,6 +10,7 @@ body{
   code{
     padding: 10px;
     background-color: #333;
+    color: #ddd;
   }
   #q1{
     height: 30px;
@@ -54,7 +55,7 @@ body{
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #5cb85c;
+    background-color: #041a7e;
     color: white;
     border: none;
     border-radius: 4px;
