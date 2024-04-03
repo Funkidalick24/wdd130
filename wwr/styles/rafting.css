@@ -42,17 +42,47 @@ h1, h2, h3, h4, h5, h6 {
 p{
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
+  background-color: #efefef;
+  width: fit-content;
+}
+.companyinfo{
+  position: relative;
+  display: flex;
 }
 
+.compmap {
+  width: 70%;
+  display:inline-block;
+  height: auto;
+}
+.compinfo{
+  width: 30%;
+  display: inline-block;
+  height: 300px;
+}
 
+.heading{
+  font-size: xx-large;
+  text-align: center;
+}
  
+.labels{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
 
+.person{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 
   body {
       font-family: var(--paragraph-font);
-      background-color: var(--primary-color);
-      color: var(--paragraph-color-on-color);
+      color: var(--paragraph-color-on-white);
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -106,6 +136,7 @@ p{
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      height: 20px;
   }
 
   nav a {
@@ -239,3 +270,15 @@ height: auto;
 margin-bottom: 20px;
 }
 
+
+.employeesec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  
+}
+
+.employeesec img {
+  padding: 10;
+}
