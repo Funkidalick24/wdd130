@@ -1,307 +1,283 @@
-/* Importing external fonts */
-@import url('[1](https://fonts.googleapis.com/css2?family=Sedgwick&family=Sedgwick+Ave&display=swap)');
-
-/* Root element for defining global CSS variables */
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick&family=Sedgwick+Ave&display=swap');
 :root {
-  /* Color variables */
-  --primary-color: #941B0C;
-  --secondary-color: #BC3908;
-  --accent1-color: #F6AA1C;
-  --accent2-color: white;
+  
+    --primary-color: #941B0C   ;
+    --secondary-color: #BC3908 ;
+    --accent1-color: #F6AA1C;
+    --accent2-color: white;
 
-  /* Font variables */
+  
   --heading-font: Sedgwick Ave;
   --paragraph-font: Sedgwick Ave, Helvetica, sans-serif;
 
-  /* Color variables for different elements */
-  --headline-color-on-white: #941B0C;
-  --headline-color-on-color: white;
-  --paragraph-color-on-white: #ECA400;
-  --paragraph-color-on-color: white;
-  --paragraph-background-color: #BC3908;
+  
+  --headline-color-on-white: #941B0C;  
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: #ECA400; 
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: #BC3908  ;
   --nav-link-color: #941B0C;
   --nav-background-color: #D4AC0D;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #F6AA1C;
 }
-
-/* Header styling */
-header {
+header{
   display: grid;
   max-width: 1000px;
   align-items: center;
+  
+
+  
 }
 
-/* Styling for heading elements */
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+
+  
 }
 
-/* Styling for paragraph elements */
-p {
+p{
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   background-color: #efefef;
   width: fit-content;
 }
-
-/* Styling for company info section */
-.companyinfo {
+.companyinfo{
   position: relative;
   display: flex;
 }
 
-/* Styling for company map section */
 .compmap {
   width: 70%;
   display:inline-block;
   height: auto;
   border: 0;
 }
-
-/* Styling for company info section */
-.compinfo {
+.compinfo{
   width: 30%;
   display: inline-block;
   height: 300px;
 }
 
-/* Styling for heading section */
-.heading {
+.heading{
   font-size: xx-large;
   text-align: center;
 }
-
-/* Styling for labels section */
-.labels {
+ 
+.labels{
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
 }
 
-/* Styling for person section */
-.person {
+.person{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-/* Styling for body element */
-body {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
 
-/* Styling for container element */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  body {
+      font-family: var(--paragraph-font);
+      color: var(--paragraph-color-on-white);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+  }
 
-/* Styling for header element */
-header {
-  display: grid;
-  grid-template-columns: 120px 5rem 5rem 5rem 5rem;
-  align-items: center;
-}
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
 
-/* Styling for menu element */
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  header {
+      display: grid;
+      grid-template-columns: 120px 5rem 5rem 5rem 5rem ;
+      align-items: center;
+  }
 
-/* Styling for logo element */
-.logo {
-  color: rgb(4, 59, 59);
-  font-size: 25px;
-}
+  .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
 
-/* Styling for navbar links */
-.menu .navbar ul li a {
-  position: relative;
-  float: left;
-  font-size: 18px;
-  padding: 20px;
-  color: aquamarine;
-  display: block;
-}
+  .logo {
+      color: rgb(4, 59, 59);
+      font-size: 25px;
+  }
 
-/* Styling for navbar links on hover */
-.menu .navbar ul li a:hover {
-  color: aqua;
-}
+  .menu .navbar ul li a {
+      position: relative;
+      float: left;
+  }
 
-/* Styling for nav element */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 20px;
-}
+  .menu .navbar ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: aquamarine;
+      display: block;
+  }
 
-/* Styling for nav links */
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-}
+  .menu .navbar ul li a:hover {
+      color: aqua;
+  }
 
-/* Styling for social links */
+  nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 20px;
+  }
+
+  nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+  }
+
 .sociallinks a {
-  text-decoration: none;
-  color: inherit;
+text-decoration: none;
+color: inherit;
+
 }
 
-/* Styling for hero section */
 .hero {
-  position: relative;
-  overflow: visible;
-  background-repeat: no-repeat;
-  background-size: cover;
+position: relative;
+overflow: visible;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-/* Styling for hero images */
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+display: block;
+width: 100%;
+height: auto;
 }
 
-/* Styling for title box in hero section */
 .hero .title-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--primary-color);
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: var(--primary-color);
+padding: 20px;
+text-align: center;
+width: 100%;
+box-sizing: border-box;
 }
 
-/* Styling for h1 in hero section */
+
 .hero h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: var(--color-primario);
+margin: 0;
+font-size: 2.5rem;
+color: var(--color-primario);
 }
 
-/* Styling for nav element */
+
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
 }
 
-/* Styling for nav links */
 nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
+margin-right: 10px;
+text-decoration: none;
+color: #333;
 }
 
-/* Styling for history box */
 .history-box {
-  background-color: rgba(224, 230, 229, 0.904);
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
+background-color: rgba(224, 230, 229, 0.904);
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+align-items: center;
 }
 
-/* Styling for history text */
 .history-text-left,
 .history-text-right {
-  flex: 1;
+flex: 1;
 }
 
-/* Styling for history images */
 .history-image {
-  max-width: 50%;
-  margin: 0 30px;
+max-width: 50%;
+margin: 0 30px;
 }
 
-/* Styling for history content */
 .history-content {
-  flex: 1;
+flex: 1;
 }
 
-/* Styling for adventures section */
+
+
 .adventures-section {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
 }
 
-/* Styling for figures in adventures section */
 .adventures-section figure {
-  flex: 1;
+flex: 1;
   margin: 0 10px;
+ 
   text-align: center;
 }
 
-/* Styling for images in adventures section */
 .adventures-section img {
-  width: 100%;
+width: 100%;
   height: auto;
   max-width: 100%;
+  
   object-fit: cover;
 }
 
-/* Styling for footer */
+
 footer {
-  background-color: #efefef;
-  padding: 20px;
-  text-align: center;
+background-color: #efefef;
+padding: 20px;
+text-align: center;
 }
 
-/* Styling for social links in footer */
 .sociallinks {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
-/* Styling for figures in social links */
 .sociallinks figure {
-  margin-left: 5px;
+margin-left: 5px;
 }
 
-/* Styling for images in social links */
 .sociallinks img {
-  width: 30px;
-  height: auto;
+width: 30px;
+height: auto;
 }
 
-/* Styling for form group */
 .form-group {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
-/* Styling for employee section */
+
 .employeesec {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 40px;
+  
 }
 
-/* Styling for images in employee section */
 .employeesec img {
   padding: 10;
 }
