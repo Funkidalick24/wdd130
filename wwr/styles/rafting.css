@@ -54,6 +54,7 @@ p{
   width: 70%;
   display:inline-block;
   height: auto;
+  border: 0;
 }
 .compinfo{
   width: 30%;
