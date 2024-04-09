@@ -1,120 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Connect with us for an exhilarating rafting adventure! Get in touch for bookings, inquiries, or suggestions. Dive into the fun!">
-    <meta name="author" content="Farai Confidence Dandara">
-    <title>The Rapids - Contact Us</title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <meta name="author" content="Farai Dandara">
+    <meta name="description" content="The contact page for our white water rafting site">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-    <header>
-    
-        <img src="images/Rapids_logo.jpg" alt="Logo" width="100" height="100">
-        <nav>
-            
-                <a href="site-plan-rafting.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </ul>
+    <header class="header-box">
+        <div class="logo-box">
+            <img src="images/Rapids_logo.jpg" alt="Our logo, A small image of brave rafters, riding in a red raft down the river.">
+        </div>
+        <p class="compnamehome">The Rapids</p>
+        <nav class="headernav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
     <main>
-      <h1 class="heading">Our Team</h1>
-     
-        <figure class="employeesec">
-          <div>
-          <img src="images/smilingperson1.jpeg" alt="Employee 1 smiling" >
-          <figcaption>John Doe - Senior Raft Guide</figcaption>
+        <h2 class="compinfo"> Company Information</h2>
+
+        <div class="info">
+            <h3 class="address" >Address</h3>
+            <p class="address1">123 White Water Way <br>
+                Victoria falls <br>
+                84321
+            </p>
+
+            <h3 class="number">Phone Numbers</h3>
+            <p class="numbers">+263 1456 9876 <br>
+            +263 3456 8976</p>
+
+            <h3 class="emailh"> Email</h3>
+            <p class="email"> therapidswaterrafting@gmail.com</p>
+            <h3 class="map">Google Map</h3>
+            <img class="mapp"src="images/LoganRiver.jpeg" alt="Map of the logan river">
         </div>
-        <div>
-          <img src="images/smilingperson2.jpeg" alt="Employee 2 smiling">
-          <figcaption>Jane Smith - Rafting Instructor</figcaption>
+
+        <div class="custex">
+            <h2 class="emp">Meet Our Customer Service Specialist</h2>
+            <p class="empinfo">This is Erica, She is a white water Rafting Pro! She will be able to assist you with any questions you may have! Fill out your information in our customer experince survey and she will reach out to you!</p>
+            <img class="erica" src="images/customerservice.png" alt="Erica, our customer service and white water rafting expert.">
+            <p class="empinfo2"> This is Paul, he is our local river expert. He will help you plan and prepare for each of our 3 Day trip tours. His experience and knowledge is the best in the industry.</p>
+            <img class="paul" src="images/river_expert.jpeg" alt="A picture of Paul our river expert scouting out a camping site.">
+            <p class="empinfo3"> This is Steven. Steven is our local adrenaline junckie. He personally tests the rapids each week to ensure their safty and give our river updated dificulty level depending on the rainfall</p>
+            <img class="steven" src="images/river_expert2.jpeg" alt="A picture of Steven rafting through some of our best white water.">
         </div>
-        <div>
-          <img src="images/smilingperson3.jpeg" alt="Employee 3 smiling">
-          <figcaption>Mike Johnson - Operations Manager</figcaption>
-        </figure>
-        
-     
-      <h2 class="heading">Contact Us</h2>
-      
-      <!-- Contact Form -->
-      <section class="contact">
-       
+
+
+        <h2 class="survey">Tell us about you.</h2>
         <form>
-         <div class="person">
-          <label for="name" >Name:</label>
-          <input type="text" id="name" name="user_name" required>
-      
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="user_email" required>
-         </div>
-      
-          <p>Purpose of Message:</p>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="grid">
+                    <label label="user name"></label>User Name<br>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label class="user email" label="user email">User Email</label><br>
+                    <input type="text" id="user email" name="user email"><br><br>
 
-          <div class="labels">
-            <input type="radio" id="general" name="purpose" value="general" required>
-          <label for="general">General Inquiry</label><br>
-          <input type="radio" id="reservation" name="purpose" value="reservation">
-          <label for="reservation">Reservation Question</label><br>
-          <input type="radio" id="suggestion" name="purpose" value="suggestion">
-          <label for="suggestion">Website Suggestion</label>
-          </div>
-          <br>
-      
-          <label for="message">Message:</label>
-          <textarea id="message" name="user_message" required></textarea> <br>
-      
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
-      
-          <input type="submit" value="Send a message">
+                    <label class="purpose" label="purpose">What is your pupose for contacting us?</label><br>
+                    
+                        <br><label class="container">General Inquiry
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Reservation Question
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Website Suggestion
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    <br><label class="message" label="message"> What would you like to tell us?</label><br>
+                    <br><input class="textarea" type="textarea" rows="4" cols="50' id="Message" name="message"><br><br>
+                </div>
+
+            </fieldset>
+            
+            <button type="submit">Submit Quiz</button>
+
         </form>
-      </section>
-      <h2 class="heading">Company Information</h2>
-      
-      <!-- Company Information -->
-      <aside class="companyinfo">
-      <div class="compinfo">
-       
-        <p>123 Rafting Street<br>
-        Raftville, RV 12345</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: contact@raftingco.com</p>
-      </div>
-      
-        <!-- Embedded Google Map -->
-        <iframe class="compmap"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3164099724!2d-118.691930524858!3d34.02073030000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0x9e0a7207a6f88f2!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1580934293986!5m2!1sen!2sus"
-          allowfullscreen="">
-        </iframe>
-      </aside>
-      
+        
     </main>
-
-      <footer>
-       
+    <footer>
+        <div class="footer-box">
+        <p>© 2024 🎞Farai Confidence Dandara 🎞 Utah </p>
         <nav class="sociallinks">
-          <p> ©️ 2024🏀Farai Confidence Dandara🏀 Harare Zimbabwe</p>
             <a href="https://facebook.com">
-              <img src="images/facebook.png" alt="Facebook" class="logo_icon">
-            </a>
-            <a href="https://twitter.com">
-              <img src="images/5296514_bird_tweet_twitter_twitter_logo_icon.png" alt="Twitter" class="logo_icon">
+                <img class="facebook" src="images/facebook_logo.png" alt="Facebook">
             </a>
             <a href="https://instagram.com">
-              <img src="images/5296765_camera_instagram_instagram_logo_icon.png" alt="Instagram" class="logo_icon">
+                <img class="insta" src="images/instagram_logo.png" alt="Instagram">
             </a>
-          </nav>
-      </footer>
-    
+            <a href="https://twitter.com">
+                <img class="twitter" src="images/twitter_logo.webp" alt="Twitter">
+            </a>
+        </nav>
+        </div>
+        
+    </footer>
 </body>
 </html>
-
-

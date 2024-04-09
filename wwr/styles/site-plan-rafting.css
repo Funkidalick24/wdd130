@@ -1,159 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick&family=Sedgwick+Ave&display=swap');
-:root {
-  
-    --primary-color: #941B0C   ;
-    --secondary-color: #BC3908 ;
-    --accent1-color: #F6AA1C;
-    --accent2-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-  
-  --heading-font: "Sedgwick Ave";
-  --paragraph-font: Sedgwick Ave, Helvetica, sans-serif;
+:root{
+    --primary-color: #377771;
+    --secondary-color: #FFFBBD;
+    --accent1-color: #CA3C25;
+    --accent2-color: #1D1A05;
 
-  
-  --headline-color-on-white: #941B0C;  
-  --headline-color-on-color: white; 
-  --paragraph-color-on-white: #ECA400; 
-  --paragraph-color-on-color: white; 
-  --paragraph-background-color: #BC3908  ;
-  --nav-link-color: #941B0C;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #F6AA1C;
+    --heading-font: Raleway;
+    --paragraph-font: Raleway;
+
+    --nav-background-color: #FFFBBD;
+    --nav-link-color: #1D1A05;
+    --nav-hover-link-color: #CA3C25;
+    --nav-hover-background-color: #377771;
 }
 
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
 
-body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-.sitemap {
-  display: grid;
-  justify-content: center;
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
 }
-.sitemap > div {
-  text-align: center;
+header{
+    padding: 20px;
+    background-color: var(--secondary-color);
+
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
+p{
+    padding: 25px;
 }
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
+
+nav{
+    background-color: var(--accent1-color);
+    font-size: 1.2rem;
+    display: flex;
+
 }
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+
 }
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
 }
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+
+nav a:hover{
+    color: var(--nav-background-color);
+    background-color: var(--nav-hover-background-color);
 }
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-/* font-size: larger;*/
